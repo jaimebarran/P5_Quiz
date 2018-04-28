@@ -3,14 +3,15 @@
     Lista de Quizzes:
 </h1>
 
+
+<p>Pregunta Número 1</p>
+<% for (var i in quizzes) { %>
+<% var quiz = quizzes[i]; %>
 <ul>
-    <% for (var i in quizzes) { %>
-    <% var quiz = quizzes[i]; %>
-    <ul>
-        <li>Pregunta Número <%=+i+1%> ---> <%= quiz.question %>: <%= quiz.answer %></li>
-    </ul>
-    <% } %>
+    <li>Pregunta Número <%=+i+1%> ---> <%= quiz.question %>: <%= quiz.answer %></li>
 </ul>
+<% } %>
+
 
 <table>
     <% for (var i in quizzes) { %>
