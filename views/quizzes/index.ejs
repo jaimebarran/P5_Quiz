@@ -7,8 +7,7 @@
     <% for (var i in quizzes) { %>
     <% var quiz = quizzes[i]; %>
     <ul>
-        <!--<li> <a href="/quizzes/<%= quiz.id %>"></a><a href="/quizzes/<%= quiz.answer %>"></a> </li>-->
-        <li><%= quiz.question %>: <%= quiz.answer %></li>
+        <li>Pregunta Número <%=+i+1%> ---> <%= quiz.question %>: <%= quiz.answer %></li>
     </ul>
     <% } %>
 </ul>
